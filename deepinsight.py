@@ -43,7 +43,7 @@ st.markdown("Real-Time Presidential Race / Twitter Analysis ")
 st.markdown("updates every 5 seconds")
 st.set_option('deprecation.showPyplotGlobalUse', False)
 # top-level filters
-selected = st.selectbox("Select the Job", index=0, options=["PeterObi", "BAT", "Atiku"])
+selected = st.selectbox("Select the Candidate ", index=0, options=["PeterObi", "BAT", "Atiku"])
 
 # creating a single-element container
 placeholder = st.empty()
