@@ -235,7 +235,7 @@ for seconds in range(200):
         #st.markdown("### Detailed Data View")
         st.dataframe(sentiment_analysis(keyword1=selected)[['Raw tweet', 'compound']].tail())
         file_name_recent = pd.read_csv(str.lower(selected) + ".csv")
-        csv_file = convert_df_to_csv(file_name_recent),
+        csv_file = convert_df_to_csv(file_name_recent)
         st.download_button(label="Download data as CSV", data=csv_file, file_name=selected + ".csv", mime='text/csv')
         time.sleep(60)
 #extract_tweets("Kwankwaso", "IsaacIdahosa", from_date="2023-01-28", number_of_tweets_to_retrieve=10)  
