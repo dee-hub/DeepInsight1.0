@@ -41,7 +41,7 @@ st.set_page_config(
 st.title('DeepInsight1.0')
 st.markdown("Real-Time Presidential Race / Twitter Analysis ")
 st.markdown("updates every 5 seconds")
-st.set_option('deprecation.showPyplotGlobalUse', False)
+#st.set_option('deprecation.showPyplotGlobalUse', False)
 # top-level filters
 selected = st.selectbox("Select the Candidate ", index=0, options=["PeterObi", "BAT", "Atiku"])
 
@@ -170,10 +170,16 @@ def candidate_word_cloud(keyword1):
     wordcloud.generate(str(text))
     #wordcloud.generate_from_frequencies(bigrams)
     #plt.figure(figsize=(10, 8))
-    plt.imshow(wordcloud, interpolation='bilinear')
-    plt.axis("off")
-    plt.show()
-    st.pyplot()
+   # plt.imshow(wordcloud, interpolation='bilinear')
+  #  plt.axis("off")
+ #   plt.show()
+   # st.pyplot()
+
+    fig, ax = plt.subplots()
+    ax.imshow(wordcloud, interpolation='bilinear')
+    ax.axis("off")
+    st.pyplot(fig)
+
     #plt.show()
     
 
