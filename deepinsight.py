@@ -223,6 +223,6 @@ for seconds in range(200):
             #fig2 = px.histogram(data_frame=df, x="age_new")
             st.write(candidate_word_cloud(keyword1=selected))
         #st.markdown("### Detailed Data View")
-        st.dataframe(sentiment_analysis(keyword1=selected))
+        st.dataframe(sentiment_analysis(keyword1=selected)[['Raw tweet', 'compound']].tail())
         time.sleep(60)
 #extract_tweets("Kwankwaso", "IsaacIdahosa", from_date="2023-01-28", number_of_tweets_to_retrieve=10)  
