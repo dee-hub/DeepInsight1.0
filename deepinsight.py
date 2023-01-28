@@ -50,7 +50,7 @@ placeholder = st.empty()
 
 def convert_df_to_csv(df):
     # IMPORTANT: Cache the conversion to prevent computation on every rerun
-    return df.to_csv().encode('utf-8')
+    return df.to_csv()
 
 def extract_tweets(keyword1, keyword2, from_date, number_of_tweets_to_retrieve):
     # Importing the libraries
