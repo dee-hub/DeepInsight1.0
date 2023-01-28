@@ -1,6 +1,6 @@
 # DeepInsight1.0
 
-DeepInsight1.0 is a repository that generates real-time analytics of tweets for presidential candidates. It uses various libraries like NLTK and VADER to perform sentiment analysis on tweets, extract bigrams and create wordclouds. The analysis is done on the tweets of the presidential candidates, which are pulled from the twitter API.
+DeepInsight1.0 generates real-time analytics of tweets for presidential candidates. It uses various libraries like NLTK and VADER to perform sentiment analysis on tweets, extract bigrams and create wordclouds. The analysis is done on the tweets of the presidential candidates, which are pulled from the twitter API.
 
 The repository is divided into two parts, the first part is the data collection and cleaning, where tweets are pulled from the twitter API and cleaned for further analysis. The second part is the analysis, where the tweets are analyzed for sentiment, bigrams and wordclouds.
 
