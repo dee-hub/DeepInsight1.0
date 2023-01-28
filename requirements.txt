@@ -4,5 +4,5 @@ tweepy
 matplotlib
 pandas
 numpy
-reflex
+regex
 wordcloud
