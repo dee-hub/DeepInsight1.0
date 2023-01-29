@@ -187,7 +187,7 @@ def candidate_word_cloud(keyword1):
     #plt.show()
     
 
-for seconds in range(200):
+for seconds in range(5000):
     extract_tweets("Peterobi", "obidatti", from_date="2023-01-28", number_of_tweets_to_retrieve=5)
     extract_tweets("BAT", "TinubuShettima", from_date="2023-01-28", number_of_tweets_to_retrieve=5)
     extract_tweets("Atiku", "AtikuOkowa", from_date="2023-01-28", number_of_tweets_to_retrieve=5)
