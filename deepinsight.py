@@ -73,8 +73,8 @@ def extract_tweets(keyword1, keyword2, number_of_tweets_to_retrieve):
     auth.set_access_token(access_token, access_token_secret)
     api = tweepy.API(auth)
     #For Obi
-    tweets = tweepy.Cursor(api.search_tweets, q=keyword1 + " -filter:retweets", lang="en", since_id=from_date, tweet_mode='extended').items(number_of_tweets_to_retrieve)
-    tweets_2 = tweepy.Cursor(api.search_tweets, q= keyword2 + " -filter:retweets", lang="en", since_id=from_date, tweet_mode='extended').items(number_of_tweets_to_retrieve)
+    tweets = tweepy.Cursor(api.search_tweets, q=keyword1 + " -filter:retweets", lang="en", tweet_mode='extended').items(number_of_tweets_to_retrieve)
+    tweets_2 = tweepy.Cursor(api.search_tweets, q= keyword2 + " -filter:retweets", lang="en", tweet_mode='extended').items(number_of_tweets_to_retrieve)
     tweet1_data = []
     tweet2_data = []
     date = []
