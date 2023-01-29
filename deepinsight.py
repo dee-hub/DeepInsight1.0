@@ -188,9 +188,9 @@ def candidate_word_cloud(keyword1):
     
 
 for seconds in range(5000):
-    extract_tweets("Peterobi", "obidatti", from_date="2023-01-28", number_of_tweets_to_retrieve=5)
-    extract_tweets("BAT", "TinubuShettima", from_date="2023-01-28", number_of_tweets_to_retrieve=5)
-    extract_tweets("Atiku", "AtikuOkowa", from_date="2023-01-28", number_of_tweets_to_retrieve=5)
+    extract_tweets("Peterobi", "obidatti", number_of_tweets_to_retrieve=5)
+    extract_tweets("BAT", "TinubuShettima", number_of_tweets_to_retrieve=5)
+    extract_tweets("Atiku", "AtikuOkowa", number_of_tweets_to_retrieve=5)
     #df["age_new"] = df["age"] * np.random.choice(range(1, 5))
     #df["balance_new"] = df["balance"] * np.random.choice(range(1, 5))
     data_metrics = sentiment_analysis(keyword1=selected)
