@@ -52,7 +52,7 @@ def convert_df_to_csv(df):
     # IMPORTANT: Cache the conversion to prevent computation on every rerun
     return df.to_csv(index=False).encode('utf-8')
 
-def extract_tweets(keyword1, keyword2, from_date, number_of_tweets_to_retrieve):
+def extract_tweets(keyword1, keyword2, number_of_tweets_to_retrieve):
     # Importing the libraries
     import configparser
     import tweepy
