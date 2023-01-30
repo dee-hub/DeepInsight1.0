@@ -7,3 +7,4 @@ numpy
 regex
 wordcloud
 scikit-learn
+plotly
