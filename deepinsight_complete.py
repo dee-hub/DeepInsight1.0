@@ -1,4 +1,5 @@
 from nltk.corpus import stopwords
+import nltk
 nltk.download('vader_lexicon')
 nltk.download('stopwords')
 from textblob import TextBlob
